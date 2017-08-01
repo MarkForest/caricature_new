@@ -18,22 +18,24 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'https://fonts.googleapis.com/css?family=Neucha',
+        'assets/bootstrap/css/bootstrap.css',
+        'assets/fontawesome/css/font-awesome.css',
+        'assets/gridloading/css/component.css',
+        'assets/animate.css',
         'css/style.css',
-        'css/camera.css',
-//        'css/blur.css',
     ];
     public $js = [
-        'js/jquery.js',
-        'js/jquery-migrate-1.1.1.js',
-        'js/superfish.js',
-        'js/jquery.equalheights.js',
-        'js/jquery.easing.1.3.js',
-        'js/camera.js',
-        'js/functions.js',
+
+        'assets/bootstrap/js/bootstrap.js',
+        'assets/gridloading/js/modernizr.custom.js',
+        'assets/gridloading/js/masonry.pkgd.min.js',
+        'assets/gridloading/js/imagesloaded.js',
+        'assets/gridloading/js/classie.js',
+        'assets/gridloading/js/AnimOnScroll.js',
+        'assets/scripts.js',
+
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
     ];
 }
